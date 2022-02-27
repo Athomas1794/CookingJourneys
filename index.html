@@ -4,9 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cooking Journeys</title>
+    <link href="./style.css" rel="stylesheet">
+    <script src="./scripts/addGrocery.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <h1>Cooking Journeys</h1>
+        <p>Welcome to my personal site for groceries, recipies, and food reviews</p>
+    </header>
+
+    <!-- Interactive grocery list section -->
+    <section id="groceries">
+        <h2>Grocery List</h2>
+        <ul id="grocery-list">
+            <li>First item</li>
+        </ul>
+        <form class="grocery-form">
+            <label for="new-grocery">New grocery</label>
+            <input type="text" id="new-grocery" name="new-grocery" minlength="1" required>
+            <input id="submit-grocery" type="button" value="Add">
+        </form>
+    </section>
 </body>
 </html>

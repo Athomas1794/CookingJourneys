@@ -11,7 +11,7 @@
 <body>
     <header>
         <h1>Cooking Journeys</h1>
-        <p>Welcome to my personal site for groceries, recipies, and food reviews</p>
+        <p>Welcome to my personal site for groceries, recipes, and food reviews</p>
     </header>
 
     <!-- Interactive grocery list section -->
@@ -24,6 +24,23 @@
             <label for="new-grocery">New grocery</label>
             <input type="text" id="new-grocery" name="new-grocery" minlength="1" required>
             <input id="submit-grocery" type="button" value="Add">
+        </form>
+    </section>
+
+    <!-- Interactive recipe section -->
+    <!-- TODO: reorganize this into headers and pages later -->
+    <section id="recipes">
+        <h2>Recipes</h2>
+        <ul id="recipe-list">
+            <li>First Recipe</li>
+        </ul>
+        <br>
+        <form class="recipe-form">
+            <label for="new-recipe">New Recipe</label>
+            <br>
+            <textarea id="new-recipe" name="new-recipe" rows="5" cols="50" required></textarea>
+            <br>
+            <input id="submit-recipe" type="button" value="Add">
         </form>
     </section>
 </body>

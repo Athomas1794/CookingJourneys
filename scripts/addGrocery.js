@@ -1,6 +1,6 @@
 // Storing grocery list elements
 const groceries = [];
-const groceryForm = document.getElementsByClassName('grocery-form');
+const groceryForm = document.querySelector('.grocery-form');
 const submitGroceryBtn = document.getElementById('submit-grocery');
 const groceryList = document.getElementById('grocery-list');
 const groceryTextField = document.getElementById("new-grocery");
@@ -41,3 +41,9 @@ const addGrocery = () => {
 
 //add event listener to grocery button and form submit
 submitGroceryBtn.addEventListener("click", addGrocery);
+
+//prevent form from reloading page and execute JS
+groceryForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    addGrocery();
+});
